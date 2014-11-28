@@ -42,11 +42,12 @@ To install these dependencies, execute the commands below for the OS you're runn
 For CentOS:
 
     #> yum install mysql-devel
-    My os is CentOS 6.5. If u `yum install mysl` on CentOS 6.5 , the version of libmysqlclient will be 5.1.73 , then will compile fail 。 
-    So I just yum remove the mysql-devel ,and move some files of MySQL native, then compile success.
-    version of MySQL is 5.6.12. basedir=/usr/local/mysql 
-    move bin/mysql_config & my_print_defaults to /usr/bin or build soft link (ln -s source des).
-    After than u mush `export LD_LIBRARY_PATH=/usr/local/mysql/lib/:$LD_LIBRARY_PATH` to make sure the modules can find it.
+    
+    My os is CentOS 6.5. If u `yum install mysl` on CentOS 6.5 , the version of libmysqlclient will be 5.1.73 , then will compile fail 。 <br>
+    So I just yum remove the mysql-devel ,and move some files of MySQL native, then compile success.<br>
+    version of MySQL is 5.6.12. basedir=/usr/local/mysql <br>
+    move bin/mysql_config & my_print_defaults to /usr/bin or build soft link (ln -s source des).<br>
+    After than u mush `export LD_LIBRARY_PATH=/usr/local/mysql/lib/:$LD_LIBRARY_PATH` to make sure the modules can find it.<br>
 
 For openSUSE:
 
