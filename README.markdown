@@ -39,10 +39,10 @@ To build this module you must install the libmysqlclient library and the develop
 `mysql_config` is used to determine the paths to the library and header files.  
 To install these dependencies, execute the commands below for the OS you're running.
 
-My os is CentOS 6.5. If u `yum install mysl` on CentOS 6.5 , the version of libmysqlclient will be 5.1.73 , then will compile fail 。 
+My os is CentOS 6.5. If u `yum install mysql-dev` on CentOS 6.5 , the version of libmysqlclient will be 5.1.73 , then will compile fail 。 
 So I just yum remove the mysql-devel ,and move some files of MySQL native, then compile success.
 Version of MySQL is 5.6.12. basedir=/usr/local/mysql 
-Copy bin/mysql_config & my_print_defaults to /usr/bin or build soft link (ln -s source des).<br>
+Copy bin/mysql_config and  my_print_defaults to /usr/bin or build soft link (ln -s source des).<br>
 After than u mush `export LD_LIBRARY_PATH=/usr/local/mysql/lib/:$LD_LIBRARY_PATH` to make sure the modules can find it.
 
 For CentOS:
