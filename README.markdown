@@ -43,7 +43,7 @@ My os is CentOS 6.5. If u `yum install mysql-dev` on CentOS 6.5 , the version of
 So I just yum remove the mysql-devel ,and move some files of MySQL native, then compile success.
 Version of MySQL is 5.6.12. basedir=/usr/local/mysql 
 Copy bin/mysql_config and  my_print_defaults to /usr/bin or build soft link (ln -s source des).<br>
-After than u mush `export LD_LIBRARY_PATH=/usr/local/mysql/lib/:$LD_LIBRARY_PATH` to make sure the modules can find it.
+After than u must `export LD_LIBRARY_PATH=/usr/local/mysql/lib/:$LD_LIBRARY_PATH` to make sure the modules can find it.
 
 For CentOS:
 
